@@ -10,11 +10,44 @@ public class VarietyOfExceptionTest {
 		
 		// 배열 인덱스번호 참조 에러
 		int arr[] = new int[3];
+		for(int i=20; i<=3; i++) {
+			try {
+				arr[1]=i+1;
+			}catch(ArrayIndexOutOfBoundsException e) {
+			e.printStackTrace();
+		}
+		}
+		
+		for(int num : arr) {
+			System.out.println("값 : "+num);
+		}
 		
 		
 		// NullPoint 에러
-		// Casting 에러
+		try {
+			Tiger tiger = null;
+			
+			tiger.move();
+			tiger.hunt();
+		}catch(NullPointerException e) {
+				e.printStackTrace();
+			}
 		
-	}
+		
+		// Casting 에러
+	
+		try {
+			Animal a1 = new Eagle();	//업캐스팅
+			Animal a2 = new Shark();	//업캐스팅
+			
+			Eagle eagel = (Eagle) a2; //다운캐스팅
+			
+			}catch(ClassCastException e) {
+				e.printStackTrace();
+		}
 
+		
+		System.out.println("프로그램 종료...");
+	
+}
 }
