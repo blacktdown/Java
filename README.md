@@ -7,7 +7,7 @@ Java 수업 예제
 
 ## Ch03.변수와 자료형
  > sub1.변수 실습하기
- > sub2.연산자 실습하기
+ >> sub2.연산자 실습하기
  
 ## Ch04.자바 Hello World 실습
 ## Ch05.자바 Hello World 실습
